@@ -56,7 +56,7 @@ int main(void)
     {
         cout << ci->first << " : ";
 
-/*        string last_title = "";
+        string last_title = "";
 
         for(size_t i = 0; i < ci->second.size(); i++)
         {
@@ -73,7 +73,7 @@ int main(void)
             else
                 cout << ", ";
         }
-*/
+
         cout << endl;
     }
 
