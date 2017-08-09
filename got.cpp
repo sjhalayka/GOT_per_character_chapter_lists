@@ -54,7 +54,7 @@ int main(void)
     // Print out per-character chapter lists
     for(map<string, vector<book_chapter> >::const_iterator ci = characters.begin(); ci != characters.end(); ci++)
     {
-        cout << ci->first << " : ";
+        cout << ci->first << ": ";
 
         string last_title = "";
 
@@ -62,7 +62,7 @@ int main(void)
         {
             if(books[ci->second[i].book_id].name != last_title)
             {
-                cout << books[ci->second[i].book_id].name << " ";
+                cout << endl << books[ci->second[i].book_id].name << " ";
                 last_title = books[ci->second[i].book_id].name;
             }
 
